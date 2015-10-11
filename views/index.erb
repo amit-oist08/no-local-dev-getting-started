@@ -5,6 +5,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Email</th>
+      <th> New Value </th>
     </tr>
 
     <% @contacts.each do |contact| %>
@@ -12,6 +13,7 @@
         <td><%= contact.id %></td>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
+        <td><%= text_field "Contact", "contact.name", "size" ⇒ 20 %></td>
       </tr>
     <% end %>
   </table>
